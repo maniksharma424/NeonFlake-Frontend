@@ -30,11 +30,15 @@ export default function Home() {
             <From />
           </div>
         </div>
-        <div className="w-full lg:hidden  flex justify-center items-center">
+
+        <Link
+          className="w-full lg:hidden  flex justify-center items-center"
+          href={"/collections"}
+        >
           <button className=" w-3/5 border-[1px] p-2 relative bottom-10 rounded-lg  text-white bg-black text-[25px] font-[500]">
             Browse Collection
           </button>
-        </div>
+        </Link>
       </main>
     </>
   );
