@@ -28,7 +28,7 @@ const CollectionCard = ({ info }) => {
       </div>
 
       <p className="lg:text-[16px] font-[600]">{info?.title}</p>
-      <p className="lg:text-[12px] font-[400] text-gray-500">{info?.description}</p>
+      <p className="lg:text-[12px] font-[400] text-gray-500  overflow-hidden text-ellipsis whitespace-nowrap">{info?.description}</p>
     </div>
   );
 };
