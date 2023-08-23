@@ -69,7 +69,7 @@ const From = () => {
         </div>
       ) : null}
       <div
-        className={`w-3/4 h-3/4 border-[1px] shadow-xl p-5 flex flex-col justify-around items-start font-monstreat text-[14px ${
+        className={`w-full h-3/4 border-[1px] shadow-xl p-5 flex flex-col justify-around items-start font-monstreat text-[14px ${
           loading ? "opacity-50" : null
         }`}
       >

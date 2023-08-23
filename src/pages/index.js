@@ -23,7 +23,7 @@ export default function Home() {
               </button>
             </Link>
           </div>
-          <div className="lg:w-1/2 w-5/6 flex flex-col justify-center items-center">
+          <div className="lg:w-1/2 w-5/6 flex flex-col justify-center items-center lg:px-16">
             <h1 className="lg:text-[30px] text-[23px] font-[600] lg:font-[800] mb-5 font-monstreat">
               Get Started
             </h1>
@@ -35,7 +35,7 @@ export default function Home() {
           className="w-full lg:hidden  flex justify-center items-center"
           href={"/collections"}
         >
-          <button className=" w-3/5 border-[1px] p-2 relative bottom-10 rounded-lg  text-white bg-black text-[25px] font-[500]">
+          <button className=" w-5/6 border-[1px] p-2 relative bottom-10 rounded-lg  text-white bg-black text-[25px] font-[500]">
             Browse Collection
           </button>
         </Link>
