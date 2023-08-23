@@ -24,7 +24,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="lg:w-1/2 w-5/6 flex flex-col justify-center items-center lg:px-16">
-            <h1 className="lg:text-[30px] text-[23px] font-[600] lg:font-[800] mb-5 font-monstreat">
+            <h1 className="lg:text-[30px] text-[25px] font-[800] mb-5 font-monstreat">
               Get Started
             </h1>
             <From />
