@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { RotatingLines } from "react-loader-spinner";
 
-const From = () => {
+const Form = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(null);
@@ -13,7 +13,6 @@ const From = () => {
   const [loading, setLoading] = useState(false);
   const imageRef = useRef(null);
   const videoRef = useRef(null);
-
 
   const handleTitleChange = (e) => {
     const newTitle = e.target.value;
@@ -34,7 +33,10 @@ const From = () => {
   };
 
   const handleSubmit = () => {
-    if (!title || !description || !image || !video) {
+    const trimmedTitle = title.trim();
+    const trimmedDescription = description.trim();
+
+    if (!trimmedTitle || !trimmedDescription || !image || !video) {
       toast.error("Fill all details");
     } else {
       setLoading(true);
@@ -78,9 +80,7 @@ const From = () => {
         <p>
           Title{" "}
           <span className="text-red-600 relative bottom-1 right-2">*</span>{" "}
-          <span className="text-gray-500 text-[10px]">
-            {title.length}/50
-          </span>
+          <span className="text-gray-500 text-[10px]">{title.length}/50</span>
         </p>
         <input
           type="text"
@@ -141,4 +141,4 @@ const From = () => {
   );
 };
 
-export default From;
+export default Form;

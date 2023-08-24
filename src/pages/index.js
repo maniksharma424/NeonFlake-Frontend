@@ -1,5 +1,5 @@
 import Head from "next/head";
-import From from "./components/From";
+import From from "./components/Form";
 import Link from "next/link";
 
 export default function Home() {
