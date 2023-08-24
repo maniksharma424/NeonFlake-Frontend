@@ -25,11 +25,14 @@ const CollectionCard = ({ info }) => {
           srcset=""
         />
       </div>
-
-      <p className="lg:text-[16px] font-[600]">{info?.title}</p>
-      <p className="lg:text-[12px] font-[400] text-gray-500  overflow-hidden text-ellipsis whitespace-nowrap">
-        {info?.description}
-      </p>
+      <div className="w-full h-2/6">
+        <p className="lg:text-[16px] font-[600]  overflow-hidden text-ellipsis whitespace-nowrap h-2/6">
+          {info?.title}
+        </p>
+        <div className="lg:text-[12px] font-[400] text-gray-500  overflow-scroll  h-4/6 flex">
+          {info?.description}
+        </div>
+      </div>
     </div>
   );
 };
