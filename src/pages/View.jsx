@@ -5,7 +5,6 @@ import Head from "next/head";
 const View = () => {
   const router = useRouter();
   const { title, videoURL } = router.query;
-  console.log(title);
 
   return (
     <>

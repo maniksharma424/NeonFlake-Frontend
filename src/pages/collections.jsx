@@ -57,7 +57,7 @@ const Collections = () => {
       <div className="w-full h-screen font-monstreat p-10">
         <div className="w-full h-10 flex justify-center items-center">
           <Link href={"/"}>
-            <button className="border-[1px] absolute top-5 left-5 lg:p-2 p-1 bg-[#080202] text-white rounded-md shadow-md lg:text-[18px] text-[14px]">
+            <button className="border-[1px] absolute lg:top-6 top-8 left-5 lg:p-2 p-1 bg-[#080202] text-white rounded-md shadow-md lg:text-[18px] text-[14px]">
               Go back
             </button>
           </Link>
